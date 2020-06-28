@@ -15,11 +15,11 @@ We assume a function
 
 in a binary file "A". The corresponding json file could be like:
 
-  { <br/>
+  { <br />
 	"file": "A",<br/>
 	"starting_function": "func",<br/>
 	"timing_sensitive": true,<br/>
-	"parameters": [{<br/>
+	"parameters": [{<br  />
 		"size": 1,<br/>
 			
 			"confidential": true 
