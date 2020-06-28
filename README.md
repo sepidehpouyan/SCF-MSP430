@@ -18,11 +18,9 @@ in a binary file "A". The corresponding json file could be like:
   { <br/>
 	"file": "A",<br/>
 	"starting_function": "func",<br/>
-	"timing_sensitive": true,
-	
-	"parameters": [{
-	
-			"size": 1,
+	"timing_sensitive": true,<br/>
+	"parameters": [{<br/>
+		"size": 1,<br/>
 			
 			"confidential": true 
 			
