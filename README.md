@@ -15,37 +15,25 @@ We assume a function
 
 in a binary file "A". The corresponding json file could be like:
 <pre>
-  { <br />
-	  "file": "A",<br/>
-	"starting_function": "func",<br/>
-	"timing_sensitive": true,<br/>
-	"parameters": [{<br  />
+	{ <br />
+           "file": "A",<br/>
+	   "starting_function": "func",<br/>
+	   "timing_sensitive": true,<br/>
+	   "parameters": [{<br  />
 		"size": 1,<br/>
-<pre>			
-			"confidential": true 
-			
-		}, {
-		
-			"size": 1,
-			
-		    "confidential": false
-		    
-		}
-		
-	],
-	
-	"memory": false,
-	
-	"result": {
-	
+		"confidential": true 
+	    }, {
 		"size": 1,
-		
+		"confidential": false
+		}
+	    ],
+	   "memory": false,
+	   "result": {
+	        "size": 1,
 		"confidential": true,
-		
-        "memory": false
-	
-	}
-	
-}
+		"memory": false
+		}
+	  }
+  </pre>
 
 The security level of parameters can be set by **confidential** directive. Setting the confidential directive to true makes the parameter confidential.
