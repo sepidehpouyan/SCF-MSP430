@@ -1,0 +1,2 @@
+class LoopOnHighConditionException(Exception):
+    pass

@@ -1,0 +1,2 @@
+class BranchtimeDiffersException(Exception):
+    pass

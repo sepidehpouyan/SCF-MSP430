@@ -1,0 +1,2 @@
+class RecursionException(Exception):
+    pass

@@ -1,0 +1,19 @@
+{
+	"file": "testcase/multiply",
+	"starting_function": "multiply",
+	"timing_sensitive": true,
+	"parameters": [{
+			"size": 1,
+			"confidential": true 
+		}, {
+			"size": 1,
+		    "confidential": false
+		}
+	],
+	"memory": false,
+	"result": {
+		"size": 1,
+		"confidential": true,
+        "memory": false
+	}
+}

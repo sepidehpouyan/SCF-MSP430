@@ -1,0 +1,16 @@
+{
+	"file": "testcase/bsl.vulnerable",
+	"starting_function": "BSL430_unlock_BSL",
+	"timing_sensitive": true,
+	"parameters": [{
+			"size": 1,
+			"confidential": true 
+		} 
+	],
+	"memory": true,
+	"result": {
+		"size": 1,
+		"confidential": true,
+        "memory": true
+	}
+}
