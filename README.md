@@ -40,3 +40,8 @@ The security level of parameters can be set by **confidential** directive. Setti
 
 ## Preparing binary files
 The C programs are being compiled once with the off-the-shelf LLVM backend for the MSP430, resulting in a vulnerable binary programme. You can find them as `*.vulnerable` in testcase folder. In addition, a second version of the assembly code is produced ( `*.nemdef` in testcase folder), where instructions in secret-dependent branches are balanced out with respect to the individual instructions’ execution times.
+
+## Running the benchmark
+The binary files and the corresponding json files of some vulnerable and beningn C programs is provided in the `testcase` folder. You can run them by executing:
+
+> python main.py testcase/example.json
