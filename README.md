@@ -5,3 +5,34 @@ This repository contains a tool called Side-Channel Finder for MSP, a static ana
 - To run SCF-MSP, **Python 3** is required.<br/>
 - For parsing and analyzing ELF files, a Python library, **pyelftools**, is required to install. See https://github.com/eliben/pyelftools for more details.
 - The graph library **NetworkX 1.11**.
+
+## Creating input files
+SCF-MSP takes an input file in the JSON format. It contains the path to the binary file, the starting function, a list of starting function’s arguments from high-level code and return values.
+
+We assume a function
+
+    int func(int secret, int public)
+
+in a binary file "A". The corresponding json file could be like:
+
+  {
+	"file": "A",
+	"starting_function": "func",
+	"timing_sensitive": true,
+	"parameters": [{
+			"size": 1,
+			"confidential": true 
+		}, {
+			"size": 1,
+		    "confidential": false
+		}
+	],
+	"memory": false,
+	"result": {
+		"size": 1,
+		"confidential": true,
+        "memory": false
+	}
+}
+
+The security level of parameters can be set by **confidential** directive. Setting the confidential directive to true makes the parameter confidential.
