@@ -3,5 +3,5 @@ This repository contains a tool called Side-Channel Finder for MSP, a static ana
 
 ## Pre-requisites
 - To run SCF-MSP, **Python 3** is required.<br/>
-- For parsing and analyzing ELF files, a Python library, **pyelftools**, is required to install. See https://github.com/eliben/pyelftools for more details.\
+- For parsing and analyzing ELF files, a Python library, **pyelftools**, is required to install. See https://github.com/eliben/pyelftools for more details.
 - The graph library **NetworkX 1.11**.
