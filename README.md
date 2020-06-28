@@ -37,3 +37,6 @@ in a binary file "A". The corresponding json file could be like:
   </pre>
 
 The security level of parameters can be set by **confidential** directive. Setting the confidential directive to true makes the parameter confidential.
+
+## Preparing binary files
+The C programs are being compiled once with the off-the-shelf LLVM backend for the MSP430, resulting in a vulnerable binary programme. You can find them as `*.vulnerable` in testcase folder. In addition, a second version of the assembly code is produced ( `*.nemdef` in testcase folder), where instructions in secret-dependent branches are balanced out with respect to the individual instructions’ execution times.
