@@ -14,14 +14,14 @@ We assume a function
     int func(int secret, int public)
 
 in a binary file "A". The corresponding json file could be like:
-
+<pre>
   { <br />
-	$~$ "file": "A",<br/>
+	  "file": "A",<br/>
 	"starting_function": "func",<br/>
 	"timing_sensitive": true,<br/>
 	"parameters": [{<br  />
 		"size": 1,<br/>
-			
+<pre>			
 			"confidential": true 
 			
 		}, {
