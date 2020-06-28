@@ -16,7 +16,7 @@ We assume a function
 in a binary file "A". The corresponding json file could be like:
 
   { <br />
-	"file": "A",<br/>
+	$~$ "file": "A",<br/>
 	"starting_function": "func",<br/>
 	"timing_sensitive": true,<br/>
 	"parameters": [{<br  />
